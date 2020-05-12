@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body_content %}
+{% for post in posts %}
+<div>
+	<h3> {{ post.title }}</h3>
+	<p> {{ post.content }}</p>
+	<p> {{ post.first_name }} {{ post.last_name }}</p>
+</div>
+{% endfor %}
+{% endblock %}
+
+
