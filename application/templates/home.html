@@ -4,7 +4,8 @@
 <div>
 	<h3> {{ post.title }}</h3>
 	<p> {{ post.content }}</p>
-	<p> {{ post.first_name }} {{ post.last_name }}</p>
+	<span>by <b><i>{{ post.author.first_name }} {{ post.author.last_name }}</i></b></span>
+        <span>on the <i>{{ post.date_posted }}</i></span>	
 </div>
 {% endfor %}
 {% endblock %}
