@@ -6,9 +6,16 @@
 	<body>
 		<div class='navbar'>
 			{% if current_user.is_authenticated %}
-				<a href="\home">Home</a>    <a href="\about">About</a>     <a href="\post">Post</a>    <a href="\logout">Logout</a>
+				<a href="\home">Home</a>   
+				<a href="\about">About</a>    
+				<a href="\post">Post</a>
+				<a href="\account">Account</a>    
+				<a href="\logout">Logout</a>
 			{% else %}
-				<a href="\home">Home</a>    <a href="\about">About</a>     <a href="\login">Login</a>    <a href="\register">Register</a>
+				<a href="\home">Home</a>   
+				<a href="\about">About</a>    
+				<a href="\login">Login</a>   
+				<a href="\register">Register</a>
 			{% endif %}
 		</div>
 		<h1>{{ title }}</h1>
